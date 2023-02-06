@@ -97,6 +97,8 @@ body {
 	transition: opacity 150ms ease-in-out;
 }
 
+
+
 /* 1.2 Navbar slider */
 .navbar__toggle {
 	display: none;
@@ -160,6 +162,7 @@ body {
 	transform: rotate(90deg) translate(-6px);
 }
 
+
 @media screen and (min-width: 40em) {
 
 
@@ -186,6 +189,25 @@ body {
 	.navbar__item a {
 		font-size: var(--fs);
 		opacity: 1;
+		position: relative;
+	}
+
+	.navbar__item a::before {
+		content: '';
+		display: block;
+		height: 4px;
+		border-radius: 2px;
+		background: var(--color-secondary-500);
+		position: absolute;
+		top: -0.75rem;
+		left: 0;
+		right: 0;
+		transform: scale(0, 1);
+		transition: transform ease-in-out 250ms;
+	}
+
+	.navbar__item a:hover:before {
+		transform: scale(1, 1);
 	}
 
 	.navbar__toggle-label {
