@@ -57,7 +57,8 @@ body {
 /* 0. banner */
 .banner {
 	max-width: 100%;
-	height: 400px;
+	width: 100%;
+	height: 200px;
 	background: white center / contain no-repeat url("img/banner.jpg");
 }
 
@@ -310,6 +311,11 @@ td.text-right {
 }
 
 @media screen and (min-width: 40em) {
+
+	.banner {
+		height: 480px;
+	}
+
 	.navbar {
 		display: flex;
 		justify-content: space-around;
