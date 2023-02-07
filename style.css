@@ -1,8 +1,8 @@
 :root {
-	--navbar-background: rgba(34, 34, 34, 0.85);
+	--navbar-background: rgba(34, 34, 34, 0.95);
 	--fs: 1rem;
-	--ff-title: 'Crimson Text', serif;
-	--ff-content: 'Work Sans', sans-serif;
+	--ff-title: 'Raleway', sans-serif;
+	--ff-content: "Work Sans", sans-serif;
 	--fw-regular: 400;
 	--fw-bold: 700;
 
@@ -13,7 +13,6 @@
 
 	--color-secondary-400: rgb(84, 134, 135);
 	--color-secondary-500: rgb(251, 54, 64);
-
 }
 
 *,
@@ -29,14 +28,13 @@ h4,
 h5,
 h6 {
 	font-family: var(--ff-title);
-	font-weight: var(--fw-bold);
+	font-weight: var(--fw-regular);
 }
 
-
 body {
-	/* background: var(--color-primary-100); */
+	background: var(--color-primary-100);
 	font-family: var(--ff-content);
-	font-weight: var(--fw-bold);
+	font-weight: var(--fw-regular);
 	height: 200vh;
 }
 
@@ -50,9 +48,8 @@ body {
 .banner {
 	max-width: 100%;
 	height: 400px;
-	background: center / contain no-repeat url('img/banner.jpg');
+	background: white center / contain no-repeat url("img/banner.jpg");
 }
-
 
 /* 1. navigation styles start here */
 /* 1.1 navigation general style */
@@ -96,8 +93,6 @@ body {
 	opacity: 0;
 	transition: opacity 150ms ease-in-out;
 }
-
-
 
 /* 1.2 Navbar slider */
 .navbar__toggle {
@@ -162,12 +157,41 @@ body {
 	transform: rotate(90deg) translate(-6px);
 }
 
+/* 2. content */
+.main {
+	padding: 1.4rem;
+}
+
+.image {
+	max-width: 100%;
+	width: 500px;
+	height: auto;
+}
+
+
+.image--center {
+	display: block;
+	margin: auto;
+}
+
+.image--shadow {
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.image--radius {
+	border-radius: 4px;
+}
+
+
+.footer {
+	padding: 1rem;
+	background-color: var(--navbar-background);
+	text-align: center;
+	color: var(--color-primary-100);
+}
 
 @media screen and (min-width: 40em) {
-
-
 	.navbar {
-
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -175,7 +199,6 @@ body {
 
 	.navbar__menu {
 		all: unset;
-
 	}
 
 	.navbar__list {
@@ -193,7 +216,7 @@ body {
 	}
 
 	.navbar__item a::before {
-		content: '';
+		content: "";
 		display: block;
 		height: 4px;
 		border-radius: 2px;
@@ -212,5 +235,9 @@ body {
 
 	.navbar__toggle-label {
 		display: none;
+	}
+
+	.main {
+		padding: 1.9rem;
 	}
 }
