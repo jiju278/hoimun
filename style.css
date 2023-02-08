@@ -58,8 +58,8 @@ body {
 .banner {
 	max-width: 100%;
 	width: 100%;
-	height: 200px;
-	background: white center / contain no-repeat url("img/banner.jpg");
+	height: 300px;
+	background: white center / contain no-repeat url("img/banner_h300.jpg");
 }
 
 /* 1. navigation styles start here */
@@ -313,7 +313,8 @@ td.text-right {
 @media screen and (min-width: 40em) {
 
 	.banner {
-		height: 480px;
+		height: 350px;
+		background-image: url("img/banner_576.jpg");
 	}
 
 	.navbar {
@@ -365,4 +366,22 @@ td.text-right {
 	.main {
 		padding: 1.9rem;
 	}
+}
+
+@media screen and (min-width: 50em) {
+
+	.banner {
+		height: 450px;
+		background-image: url("img/banner_768.jpg");
+	}
+
+}
+
+@media screen and (min-width: 80em) {
+
+	.banner {
+		height: 700px;
+		background-image: url("img/banner.jpg");
+	}
+
 }
