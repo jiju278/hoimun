@@ -59,7 +59,7 @@ body {
 	max-width: 100%;
 	width: 100%;
 	height: 300px;
-	background: white center / contain no-repeat url("img/banner_h300.jpg");
+	background: white center / contain no-repeat url("img/banner.jpg");
 }
 
 /* 1. navigation styles start here */
@@ -314,7 +314,6 @@ td.text-right {
 
 	.banner {
 		height: 350px;
-		background-image: url("img/banner_576.jpg");
 	}
 
 	.navbar {
@@ -372,7 +371,6 @@ td.text-right {
 
 	.banner {
 		height: 450px;
-		background-image: url("img/banner_768.jpg");
 	}
 
 }
@@ -381,7 +379,6 @@ td.text-right {
 
 	.banner {
 		height: 700px;
-		background-image: url("img/banner.jpg");
 	}
 
 }
