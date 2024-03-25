@@ -5,13 +5,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
     $objet = htmlspecialchars($_POST["objet"]);
     $message = htmlspecialchars($_POST["message"]);
-    $spamCheck = empty($_POST["spam"]);
+    $spamCheck = empty($_POST["remark"]);
 
     // Perform additional checks as needed
 
     // Example: Send email to the site administrator
     if ($spamCheck) {
-        $to = "admin@example.com";
+        $to = "admin@mail.com";
         $subject = "Nouveau message de formulaire de contact";
         $headers = "From: $email\r\n";
         $headers .= "Reply-To: $email\r\n";
